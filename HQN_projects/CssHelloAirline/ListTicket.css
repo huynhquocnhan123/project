@@ -1,0 +1,289 @@
+#content{
+    display: flex;
+    box-sizing: border-box;
+}
+
+
+/*cot trai*/
+#column_left{
+    width: 75%;
+    height: auto;
+    /*border: yellow solid 1px;*/
+    position: relative;
+}
+
+
+/*cot phai*/
+#column_right{
+    width: 25%;
+    border: #3399FF solid 1px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.border_ticket{
+    margin: 10px;
+}
+
+.information{
+    position: relative;
+}
+.information span{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+.text_right{
+    position: absolute;
+    right: 0;
+    top:40px;
+    font-size: unset !important;
+    text-transform: unset !important;
+
+}
+
+
+/*xử lí thời gian biểu*/
+.time{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+}
+.time .day{
+    width: 19%;
+    text-align: center;
+    /*margin-left: 11px;*/
+    border: #577BC1 solid 1px;
+    border-left: none;
+}
+.time .day:hover{
+    background: #577BC1 ;
+    cursor: pointer;
+
+}
+.time .day_first{
+    /*margin-left: 0px;*/
+    border-left: #577BC1 solid 1px;
+
+
+}
+.time .day p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+/*calenadar*/
+.calendar{
+    position: relative;
+
+}
+.calendar .content{
+    border: #577BC1 solid 1px;
+    border-top: none;
+    display: flex;
+}
+.calendar .content .company{
+    width: 100px;
+    margin-right: 10px;
+}
+.calendar .content .code{
+    width: 50px;
+    margin-right: 10px;
+}
+.calendar .content .date{
+    width: 100px;
+    margin-right: 10px;
+    color: #000957;
+    font-weight: bold;
+}
+.calendar .content .mass{
+    width: 50px;
+    margin-right: 20px;
+}
+.calendar .content .price{
+    width: 100px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #EBE645;
+}
+.calendar .content .detail{
+    width: 100px;
+    margin-right: 10px;
+    display: flex;
+}
+.calendar .content .detail p{
+    margin: 0px;
+    margin-right: 5px;
+
+}
+.calendar .content .detail input{
+    margin-top: -4px;
+    background: url("/Images/ListTicket/plus.PNG") no-repeat center;
+    background-size: contain;
+    /*border: #000957 solid 1px;*/
+}
+.calendar .content .detail input:checked{
+
+    background: url("/Images/ListTicket/01-point.png") no-repeat center;
+
+    /*border: #000957 solid 1px;*/
+}
+.calendar .content .choose{
+    width: 100px;
+    margin-right: 10px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #000957;
+    color: white;
+    font-weight: bold;
+}
+.calendar .content .choose:hover{
+
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.calendar .content div{
+    margin-top: 15px;
+
+}
+
+
+/*phan chi tiet ve*/
+.show{
+    font-size: 13px;
+}
+.show .journey,.price_ticket{
+    display: flex;
+    width: 100%;
+
+}
+.journey .part1 p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.journey .part2 p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.journey .part3 p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}.journey .part4 p{
+     margin-bottom: 5px;
+     margin-top: 5px;
+ }
+.journey .part1{
+    margin-right: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.journey .part2{
+    margin-right: 30px;
+    text-align: center;
+}
+.journey .part3{
+    width: 150px;
+    margin-right: 20px;
+    text-align: center;
+}
+.journey .part4 {
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+.price_ticket .part1{
+    text-align: center;
+    width: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.price_ticket .part2{
+    text-align: center;
+    width: 100px;
+    margin-right: 20px;
+}
+.price_ticket .part3{
+    text-align: center;
+    width: 150px;
+    margin-right: 20px;
+}
+.price_ticket .part4{
+    text-align: center;
+    width: 100px;
+    margin-right: 20px;
+}
+.price_ticket .part5{
+    text-align: center;
+    width: 100px;
+
+}
+
+
+/*condition package*/
+
+.condition_package div{
+    display: flex;
+}
+.condition_package div p:first-child{
+    width: 200px;
+    margin: 0px;
+}
+.condition_package .mass{
+    margin: 0px;
+}
+ /*condition ticket*/
+.condition_ticket ul{
+    margin-left: 100px;
+}
+
+
+/*calendar hiden*/
+.calendar .show{
+    display: none;
+}
+
+
+/*right*/
+/*.column_right{*/
+/*    border: #3399FF solid 1px;*/
+/*}*/
+
+.border_sort{
+    margin: 10px;
+
+}
+.border_sort .title{
+    margin-bottom: 10px;
+}
+.border_sort form{
+    border: #EBE645 solid 1px;
+    background-color: #EBE645;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: block;
+}
+.selective form img{
+    width: 30px;
+    height: 20px;
+
+ }
+.selective form label{
+    width: 150px;
+
+
+}
+.selective form div{
+    display: flex;
+
+}
+
+
+
+
+

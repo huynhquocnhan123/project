@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../CssHelloAirline/ListTicket.css">
+    <link rel="stylesheet" href="../CssHelloAirline/Header.css">
+    <script src="../JsHelloAirline/ListTicket.js"></script>
+</head>
+<body>
+<div id="container">
+    <div class="border">
+        <div id="note">
+            <p>Vé máy bay giá rẻ,nhiều khuyến mãi nội địa, quốc tế helloairline.vn</p>
+        </div>
+        <hr>
+        <div id="title">
+            <a href="Home.html"><img src="\Images\logo.png" alt="Ảnh hãng" class="img100_100"></a>
+
+            <div id="detail_support">
+                <img src="\Images\hotline.png" alt="Tổng đài" class="img50_50">
+                <div id="detail">
+                    <p>Tổng đài hỗ trợ: <font color="red">19002704</font></p>
+                    <p>Làm việc <font color="yellow" style="font-weight: bold">0h-24h </font>(không nghỉ)</p>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <nav>
+                <a href="Home.html" id="home">Trang chủ</a>
+                <a href="#" id="domestic_ticket">Vé nội địa</a>
+                <a href="#" id="international_ticket">Vé quốc tế</a>
+                <a href="News.html" id="discount_news">Tin khuyến mãi</a>
+                <a href="#" id="order_review">Xem lại đơn hàng</a>
+                <a href="#" id="utilities">Tiện ích</a>
+                <a href="#" id="contact">Liên hệ</a>
+            </nav>
+        </div>
+        <div id="content">
+            <div id="column_left">
+                <div class="border_ticket">
+                    <div class="information">
+                        <span>Hà Nội</span>
+                        <img src="/Images/air.PNG" alt="" class="size30_20">
+                        <span>Nha Trang</span>
+                        <p>Thứ Sáu 17/12/2021 </p>
+                        <span class="text_right">Vé chưa gồm thuế và phí</span>
+                    </div>
+                    <!--                    begin timetable-->
+                    <div class="time">
+                        <div class="day day_first">
+                            <p class="rank">Thứ hai</p>
+                            <p class="date">19/12</p>
+
+                        </div>
+                        <div class="day">
+                            <p class="rank">Thứ hai</p>
+                            <p class="date">19/12</p>
+
+                        </div>
+                        <div class="day">
+                            <p class="rank">Thứ hai</p>
+                            <p class="date">19/12</p>
+
+                        </div>
+                        <div class="day">
+                            <p class="rank">Thứ hai</p>
+                            <p class="date">19/12</p>
+
+                        </div>
+                        <div class="day">
+                            <p class="rank">Thứ hai</p>
+                            <p class="date">19/12</p>
+
+                        </div>
+                        <div class="day">
+                            <p class="rank">Thứ hai</p>
+                            <p class="date">19/12</p>
+                        </div>
+
+
+                    </div>
+                    <!--      end timetable-->
+                    <!--        begin clendar-->
+                    <div class="calendar">
+                        <div class="content">
+                            <img src="/Images/ListTicket/smBL_Full.gif" alt="" class="company">
+                            <div class="code">VU750</div>
+                            <div class="date">07:10 - 09:30</div>
+                            <div class="mass">23kg</div>
+                            <div class="price">399,000 đ</div>
+                            <div class="detail">
+                                <p>Chi tiết</p>
+                                <input type="button" class="size20_20 show_detail">
+                            </div>
+                            <button class="choose">Chọn</button>
+                        </div>
+                        <!--                        begin show ticket-->
+                        <div class="show">
+                            <div class="journey">
+                                <div class="part1">
+                                    <p class="city_start">TP Hồ Chí Minh</p>
+                                    <p class="time_start">07:10, 22/12/2021</p>
+                                    <p class="airport_start">Tân Sơn Nhất</p>
+
+                                </div>
+                                <div class="part2">
+                                    <p class="real_time">2 giờ 20 phút</p>
+                                    <img src="/Images/ListTicket/01-point.png" alt="">
+                                    <p class="type_airbus">Boeing 787</p>
+                                </div>
+                                <div class="part3">
+                                    <p class="city_destination">TP Hồ Chí Minh</p>
+                                    <p class="time_destination">07:10, 22/12/2021</p>
+                                    <p class="airport_destination">Tân Sơn Nhất</p>
+
+                                </div>
+                                <div class="part4"><img src="/Images/ListTicket/smQH_Full.gif" alt=""></div>
+                                <div class="part5">
+                                    <p class="company">Vietraval Airline</p>
+                                    <p>Chuyến bay: <span class="code">VU750</span></p>
+                                    <p>Loại vé: <span class="type_ticket">C</span></p>
+
+                                </div>
+                            </div>
+                            <div class="price_ticket">
+                                <div class="part1">
+                                    <p class="type_customer">Loại khách hàng</p>
+                                    <p class="result">Người lớn</p>
+                                </div>
+                                <div class="part2">
+                                    <p class="number">Số lượng vé</p>
+                                    <p class="result">1</p>
+                                </div>
+                                <div class="part3">
+                                    <p class="price">Giá mỗi vé</p>
+                                    <span class="result bold">409,000 </span><span class="bold">VNĐ</span>
+                                </div>
+                                <div class="part4">
+                                    <p class="tax_ticket">Thuế & Phí</p>
+                                    <span class="result bold">451,000 </span> <span class="bold">VNĐ</span>
+                                </div>
+                                <div class="part5">
+                                    <p class="total">Tổng giá</p>
+                                    <span class="result bold">860,000 </span> <span class="bold">VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="condition_package">
+                                <p class="bold">Điều Kiện Hành Lý:</p>
+                                <div class="margin10_10">
+                                    <p>Hành Lý Xách Tay</p>
+                                    <p class="mass">7kg</p>
+                                </div>
+                                <div class="margin10_10">
+                                    <p>Hành Lý Ký Gửi</p>
+                                    <p class="mass">7kg</p>
+                                </div>
+
+                            </div>
+                            <div class="condition_ticket">
+                                <p class="bold">Điều Kiện Về Vé:</p>
+                                <ul>
+                                    <li>Áp dụng đối vé mất phí</li>
+                                    <li>Áp dụng hoàn vé mất phí</li>
+                                    <li>Không áp dụng đổi tên</li>
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
+                        <!--                        end show ticket-->
+                        <div class="content">
+                            <img src="/Images/ListTicket/smQH_Full.gif" alt="" class="company">
+                            <div class="code">VU750</div>
+                            <div class="date">07:10 - 09:30</div>
+                            <div class="mass"></div>
+                            <div class="price">399,000 đ</div>
+                            <div class="detail">
+                                <p>Chi tiết</p>
+                                <input type="button" class="size20_20 show_detail">
+                            </div>
+                            <button class="choose">Chọn</button>
+                        </div>
+                        <div class="show">
+                            <div class="journey">
+                                <div class="part1">
+                                    <p class="city_start">TP Hồ Chí Minh</p>
+                                    <p class="time_start">07:10, 22/12/2021</p>
+                                    <p class="airport_start">Tân Sơn Nhất</p>
+
+                                </div>
+                                <div class="part2">
+                                    <p class="real_time">2 giờ 20 phút</p>
+                                    <img src="/Images/ListTicket/01-point.png" alt="">
+                                    <p class="type_airbus">Boeing 787</p>
+                                </div>
+                                <div class="part3">
+                                    <p class="city_destination">TP Hồ Chí Minh</p>
+                                    <p class="time_destination">07:10, 22/12/2021</p>
+                                    <p class="airport_destination">Tân Sơn Nhất</p>
+
+                                </div>
+                                <div class="part4"><img src="/Images/ListTicket/smQH_Full.gif" alt=""></div>
+                                <div class="part5">
+                                    <p class="company">Vietraval Airline</p>
+                                    <p>Chuyến bay: <span class="code">VU750</span></p>
+                                    <p>Loại vé: <span class="type_ticket">C</span></p>
+
+                                </div>
+                            </div>
+                            <div class="price_ticket">
+                                <div class="part1">
+                                    <p class="type_customer">Loại khách hàng</p>
+                                    <p class="result">Người lớn</p>
+                                </div>
+                                <div class="part2">
+                                    <p class="number">Số lượng vé</p>
+                                    <p class="result">1</p>
+                                </div>
+                                <div class="part3">
+                                    <p class="price">Giá mỗi vé</p>
+                                    <span class="result bold">409,000 </span><span class="bold">VNĐ</span>
+                                </div>
+                                <div class="part4">
+                                    <p class="tax_ticket">Thuế & Phí</p>
+                                    <span class="result bold">451,000 </span> <span class="bold">VNĐ</span>
+                                </div>
+                                <div class="part5">
+                                    <p class="total">Tổng giá</p>
+                                    <span class="result bold">860,000 </span> <span class="bold">VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="condition_package">
+                                <p class="bold">Điều Kiện Hành Lý:</p>
+                                <div class="margin10_10">
+                                    <p>Hành Lý Xách Tay</p>
+                                    <p class="mass">7kg</p>
+                                </div>
+                                <div class="margin10_10">
+                                    <p>Hành Lý Ký Gửi</p>
+                                    <p class="mass">7kg</p>
+                                </div>
+
+                            </div>
+                            <div class="condition_ticket">
+                                <p class="bold">Điều Kiện Về Vé:</p>
+                                <ul>
+                                    <li>Áp dụng đối vé mất phí</li>
+                                    <li>Áp dụng hoàn vé mất phí</li>
+                                    <li>Không áp dụng đổi tên</li>
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="content">
+                            <img src="/Images/ListTicket/smQH_Full.gif" alt="" class="company ">
+                            <div class="code">VU750</div>
+                            <div class="date">07:10 - 09:30</div>
+                            <div class="mass">23kg</div>
+                            <div class="price">399,000 đ</div>
+                            <div class="detail">
+                                <p>Chi tiết</p>
+                                <input type="button" class="size20_20">
+                            </div>
+                            <button class="choose">Chọn</button>
+                        </div>
+                        <div class="show">
+                            <div class="journey">
+                                <div class="part1">
+                                    <p class="city_start">TP Hồ Chí Minh</p>
+                                    <p class="time_start">07:10, 22/12/2021</p>
+                                    <p class="airport_start">Tân Sơn Nhất</p>
+
+                                </div>
+                                <div class="part2">
+                                    <p class="real_time">2 giờ 20 phút</p>
+                                    <img src="/Images/ListTicket/01-point.png" alt="">
+                                    <p class="type_airbus">Boeing 787</p>
+                                </div>
+                                <div class="part3">
+                                    <p class="city_destination">TP Hồ Chí Minh</p>
+                                    <p class="time_destination">07:10, 22/12/2021</p>
+                                    <p class="airport_destination">Tân Sơn Nhất</p>
+
+                                </div>
+                                <div class="part4"><img src="/Images/ListTicket/smQH_Full.gif" alt=""></div>
+                                <div class="part5">
+                                    <p class="company">Vietraval Airline</p>
+                                    <p>Chuyến bay: <span class="code">VU750</span></p>
+                                    <p>Loại vé: <span class="type_ticket">C</span></p>
+
+                                </div>
+                            </div>
+                            <div class="price_ticket">
+                                <div class="part1">
+                                    <p class="type_customer">Loại khách hàng</p>
+                                    <p class="result">Người lớn</p>
+                                </div>
+                                <div class="part2">
+                                    <p class="number">Số lượng vé</p>
+                                    <p class="result">1</p>
+                                </div>
+                                <div class="part3">
+                                    <p class="price">Giá mỗi vé</p>
+                                    <span class="result bold">409,000 </span><span class="bold">VNĐ</span>
+                                </div>
+                                <div class="part4">
+                                    <p class="tax_ticket">Thuế & Phí</p>
+                                    <span class="result bold">451,000 </span> <span class="bold">VNĐ</span>
+                                </div>
+                                <div class="part5">
+                                    <p class="total">Tổng giá</p>
+                                    <span class="result bold">860,000 </span> <span class="bold">VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="condition_package">
+                                <p class="bold">Điều Kiện Hành Lý:</p>
+                                <div class="margin10_10">
+                                    <p>Hành Lý Xách Tay</p>
+                                    <p class="mass">7kg</p>
+                                </div>
+                                <div class="margin10_10">
+                                    <p>Hành Lý Ký Gửi</p>
+                                    <p class="mass">7kg</p>
+                                </div>
+
+                            </div>
+                            <div class="condition_ticket">
+                                <p class="bold">Điều Kiện Về Vé:</p>
+                                <ul>
+                                    <li>Áp dụng đối vé mất phí</li>
+                                    <li>Áp dụng hoàn vé mất phí</li>
+                                    <li>Không áp dụng đổi tên</li>
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="content">
+                            <img src="/Images/ListTicket/smVJ_Full.gif" alt="" class="company">
+                            <div class="code">VU750</div>
+                            <div class="date">07:10 - 09:30</div>
+                            <div class="mass">23kg</div>
+                            <div class="price">399,000 đ</div>
+                            <div class="detail">
+                                <p>Chi tiết</p>
+                                <input type="button" class="size20_20 show_detail">
+                            </div>
+                            <button class="choose">Chọn</button>
+                        </div>
+                        <div class="content">
+                            <img src="/Images/ListTicket/smBL_Full.gif" alt="" class="company">
+                            <div class="code">VU750</div>
+                            <div class="date">07:10 - 09:30</div>
+                            <div class="mass">23kg</div>
+                            <div class="price">399,000 đ</div>
+                            <div class="detail">
+                                <p>Chi tiết</p>
+                                <input type="button" class="size20_20">
+                            </div>
+                            <button class="choose">Chọn</button>
+                        </div>
+                        <div class="content">
+                            <img src="/Images/ListTicket/smBL_Full.gif" alt="" class="company">
+                            <div class="code">VU750</div>
+                            <div class="date">07:10 - 09:30</div>
+                            <div class="mass">23kg</div>
+                            <div class="price">399,000 đ</div>
+                            <div class="detail">
+                                <p>Chi tiết</p>
+                                <input type="button" class="size20_20 show_detail">
+                            </div>
+                            <button class="choose">Chọn</button>
+                        </div>
+
+
+                    </div>
+                    <!--      end clendar-->
+
+                </div>
+
+            </div>
+            <div id="column_right">
+                <div class="border_sort">
+                    <div class="sort">
+                        <div class="title">
+                            <img src="/Images/ListTicket/img_tt_filter.png" alt="">
+                            <span>Sắp xếp</span>
+
+                        </div>
+                        <form>
+                            <input type="radio" name="check" id="offer">
+                            <label for="offer">HelloBay đề xuất</label><br>
+                            <input type="radio" name="check" id="price">
+                            <label for="price">Giá(Thấp đến cao)</label><br>
+                            <input type="radio" name="check" id="time">
+                            <label for="title">Thời gian khởi hành</label><br>
+                            <input type="radio" name="check" id="airline">
+                            <label for="airline">Hãng hàng không</label>
+
+                        </form>
+
+                    </div>
+
+                    <div class="display">
+                        <div class="title">
+                            <img src="/Images/ListTicket/img_tt_filter.png" alt="">
+                            <span>Chế độ hiển thị</span>
+
+                        </div>
+                        <form>
+                            <input type="radio" name="check" id="one_people">
+                            <label for="offer">Giá cơ bản cho 1 người</label><br>
+                            <input type="radio" name="check" id="price_package">
+                            <label for="price">Giá cơ bản + phí hành lý</label><br>
+                            <input type="radio" name="check" id="business">
+                            <label for="title">Vé hạng thương gia</label>
+                        </form>
+
+                    </div>
+                    <div class="selective">
+                        <div class="title">
+                            <img src="/Images/ListTicket/img_tt_filter.png" alt="">
+                            <span>Chọn lọc</span>
+
+                        </div>
+                        <form>
+
+                            <p>Hãng hàng không</p>
+                            <div>
+                                <input type="checkbox" name="checkbox" id="vn_airline">
+                                <label for="vn_airline">Vietnam Airlines</label>
+                                <img src="/Images/ListTicket/smVN.gif" alt="Vietnam Airlines"><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="checkbox" id="bamboo">
+                                <label for="bamboo">BamBoo Airways</label>
+                                <img src="/Images/ListTicket/smQH.gif" alt="BamBoo Airways"><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="checkbox" id="v_jet">
+                                <label for="v_jet">VietjetAir</label>
+                                <img src="/Images/ListTicket/smVJ.gif" alt="VietjetAir"><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="checkbox" id="vietravel">
+                                <label for="vietravel">Vietravel Airlines</label>
+                                <img src="/Images/ListTicket/smVU.gif" alt="Vietravel Airlines">
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>

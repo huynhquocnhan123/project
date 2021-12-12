@@ -1,0 +1,236 @@
+
+.work_time{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*text-justify: auto;*/
+
+}
+.work_time img{
+    /*float: left;*/
+}
+.work_time .text{
+    /*float: right;*/
+    text-align: justify;
+}
+/*chia 2 cot*/
+.news{
+    width: 100%;
+    position: relative;
+    display: flex;
+    position: relative;
+
+}
+/*cot trai*/
+.news .column_left{
+    clear: right;
+    width: 50%;
+    /*border: black solid 1px;*/
+}
+.news .column_left .search{
+    border: black solid 1px;
+    border-radius: 20px;
+
+}
+.column_left .row_1,.row_2,.row_3,.row_4,.btn_search{
+    margin: 0px 20px;
+}
+.column_left .search .row_1{
+    display: flex;
+}
+.column_left .search .row_1 h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-left: 20px;
+}
+.column_left input{
+    width: 93px;
+    height: 30px;
+    margin-top: 10px;
+}
+.column_left .row_4 label{
+    width: 100px;
+
+    display: inline-block;
+    /*margin-left: 100px;*/
+
+}
+.column_left .row_4 select{
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 15px;
+
+
+    /*margin-left: 100px;*/
+
+}
+#btn_exchange{
+    background: url("/Images/chuyen.PNG" )  no-repeat center   ;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+
+}
+.column_left .btn_search {
+
+    /*float: right;*/
+    /*margin-right: 20px;*/
+    text-align: right;
+    margin: 20px 10px;
+
+
+}
+.column_left .btn_search button{
+    width: 200px;
+    height: 50px;
+    background-color: yellow;
+    margin-right: 20px;
+    border-radius: 40px;
+}
+.column_left .btn_search img{
+    width: 30px;
+    height: 30px;
+    /*float: right;*/
+    margin-right: 20px;
+}
+.column_left .btn_search h3{
+    margin-top: 10px;
+    font-size: 17px;
+}
+ /*cac hinh thuc mua ve*/
+.column_left .type_buy{
+    margin: 10px;
+}
+.type_buy h3{
+    font-size: 20px;
+    text-align: center;
+}
+.list{
+    margin-right: 10px;
+    padding-left: 25px;
+}
+.type_buy li{
+    list-style-type: none;
+
+}
+.type_buy .style2 .list_icon{
+    display: block;
+
+
+}
+.style2 .list_icon a{
+    margin: 10px;
+}
+.style2 .list_icon img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+/*cot phai*/
+.news .column_right{
+    width: 500px;
+    /*border: #3399FF solid 1px;*/
+}
+/*thanh toan*/
+.service{
+    border: black solid 1px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.service h3{
+    text-align: center;
+    font-size: 20px;
+}
+.service li{
+    display: flex;
+    margin: 10px 0px;
+    text-align: justify;
+}
+.service img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+
+}
+.list_pay{
+    margin-right: 20px;
+    padding-left: 20px;
+}
+.bank img{
+    width: 100%;
+    height: 150px;
+}
+/*vé máy bay giá rẻ*/
+.list_img{
+    /*display: flex;*/
+
+}
+#ulBestPrice{
+    display: flex;
+    width: 900px;
+    overflow: hidden;
+}
+/*anhr*/
+.list_ticket .btn-move.prev {
+    left: 8px;
+    background: url(/Images/move-right.png) no-repeat center center;
+}
+.list_ticket .btn-move:hover {
+    opacity: 0.8;
+}
+.list_ticket .btn-move {
+    display: inline-block;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+#ulBestPrice{
+    margin-left: 0px;
+}
+
+
+
+#ulBestPrice li {
+    position: relative;
+    width: 162px;
+    height: 115px;
+    float: left;
+    margin-right: 16px;
+    left: 0;
+    list-style-type: none;
+}
+#ulBestPrice li:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 57%;
+    opacity: 0.6;
+    background-color: #666;
+    border-radius: 0 0 5px 5px;
+    display: block;
+    content: '';
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+

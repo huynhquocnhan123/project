@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../CssHelloAirline/Home.css">
+    <script src="../JsHelloAirline/Home.js"></script>
+    <link rel="stylesheet" href="../CssHelloAirline/Header.css">
+</head>
+<body>
+<div id="container">
+    <div class="border">
+        <div id="note">
+            <p>Vé máy bay giá rẻ,nhiều khuyến mãi nội địa, quốc tế helloairline.vn</p>
+        </div>
+        <hr>
+        <div id="title">
+            <a href="Home.html"><img src="\Images\logo.png" alt="Ảnh hãng" class="img100_100"></a>
+
+            <div id="detail_support">
+                <img src="\Images\hotline.png" alt="Tổng đài" class="img50_50">
+                <div id="detail">
+                    <p>Tổng đài hỗ trợ: <font color="red">19002704</font></p>
+                    <p>Làm việc <font color="yellow" style="font-weight: bold">0h-24h </font>(không nghỉ)</p>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <nav>
+                <a href="#" id="home">Trang chủ</a>
+                <a href="#" id="domestic_ticket">Vé nội địa</a>
+                <a href="#" id="international_ticket">Vé quốc tế</a>
+                <a href="News.html" id="discount_news">Tin khuyến mãi</a>
+                <a href="#" id="order_review">Xem lại đơn hàng</a>
+                <a href="#" id="utilities">Tiện ích</a>
+                <a href="#" id="contact">Liên hệ</a>
+            </nav>
+        </div>
+        <div class="work_time center margin_20_0">
+            <img src="\Images\dongho.jpg" class="img100_100">
+            <div class="text">
+                <p>Giờ làm việc: từ 0h-24h, liên tục không nghỉ, kể cả chủ nhật, các ngày lễ tết.</p>
+                <p>Quý khách có bất kì thắc mắc hoặc cần trợ giúp, vui lòng gọi tổng đài 1900 2704</p>
+            </div>
+
+        </div>
+        <div class="news">
+            <div class="column_left">
+                <form class="search margin10_10">
+                    <div class="row_1">
+                        <img src="\Images\airline.png" class="img100_100 border20">
+                        <h1>Vé máy bay giá rẻ</h1>
+                    </div>
+                    <hr style="border:  dashed 1px ">
+                    <div class="row_2">
+                        <label>Điểm đi</label>
+                        <input type="text" id="departure">
+                        <input type="button" id="btn_exchange" onclick="btn_ex()" >
+
+                        <label>Điểm đến</label>
+                        <input type="text" id="destination">
+                    </div>
+                    <div class="row_3">
+                        <label >Ngày đi</label>
+                        <input type="date" style="width: 115px;margin-right: 7px">
+                        <label>Ngày về</label>
+                        <input type="date" style="width: 115px">
+                        <!--                    <label>Ngày</label>-->
+                        <!--                    <input type="text">-->
+                        <!--                    <label>Tháng </label>-->
+                        <!--                    <input type="text">-->
+                        <!--                    <label>Năm</label>-->
+                        <!--                    <input type="text">-->
+
+                    </div>
+                    <hr style="border:  dashed 1px "">
+                    <div class="row_4">
+                        <label>Người lớn</label>
+                        <select name="number">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <span>(Từ 12 tuổi trở lên)</span><br>
+                        <label>Trẻ em </label>
+                        <select name="number">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <span>(Từ 2 đến 12 tuổi)</span><br>
+                        <label>Em bé </label>
+                        <select name="number">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+
+                        </select>
+
+                        <span>(Dưới 2 tuổi)</span>
+
+                    </div>
+                    <div class="btn_search">
+                        <button type="button" onclick="window.location.href='ListTicket.html'">
+                            <h3><img src="\Images\search.png" class="img50_50">Tìm chuyến bay</h3>
+                        </button>
+
+                    </div>
+
+                </form>
+                <hr class="width_350">
+                <div class="type_buy search">
+                    <h3>Các hình thức mua vé máy bay giá rẻ</h3>
+                    <hr>
+                    <ul class="list">
+                        <li class="margin_20_0 style1">
+                            <img src="\Images\bgNumber1.png" alt="number1">
+                            <span>Trực tiếp lên website, nhanh nhất - tiện nhất.</span>
+                        </li>
+                        <li class="margin_20_0 style2">
+                            <img src="\Images\bgNumber2.png" alt="number2">
+                            <span>Qua chat:</span>
+                            <div class="list_icon margin_20_0">
+                                <a href="https://www.messenger.com" target="_blank"><img src="\Images\messenger.png" alt="Messenger" ></a>
+                                <a href="https://www.skype.com" target="_blank"><img src="\Images\skype.png" alt="Skype"></a>
+                                <a href="https://www.viber.com" target="_blank"><img src="\Images\viber.png" alt="Viber"></a>
+                                <a href="https://id.zalo.me" target="_blank"><img src="\Images\zalo.png" alt="Zalo"></a>
+                                <a href="https://account.zopim.com" target="_blank"><img src="\Images\zopim.png" alt="Zopim"></a>
+
+                            </div>
+
+                        </li>
+                        <li class="margin_20_0 style3">
+                            <img src="\Images\bgNumber3.png" alt="number3">
+                            <span>Gọi điện thoại cho HelloBay</span>
+                            <div class="phone margin_20_0">
+                                <img src="\Images\phone.png" alt="">
+                                <span>Tổng đài: <span style="color: chocolate">1900 1234</span></span>
+                            </div>
+                        </li>
+                        <li class="margin_20_0 style4">
+                            <img src="\Images\bgNumber4.png" alt="number4">
+                            <span>Đến trực tiếp văn phòng HelloBay tại Hà Nội và Sài Gòn:</span>
+                            <div class="map margin_20_0">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7838.684254869503!2d106.70676642475235!3d10.785086936675276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1547181657956" width="360" height="250" frameborder="0" style="border:0" ></iframe>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="column_right">
+                <div class="images">
+                    <img src="/Images/vietjet-air.jpg" alt="Vietjet" style="width: 500px; height:395px; margin-top: 10px">
+                </div>
+                <hr>
+                <div class="service ">
+                    <h3>Các hình thức thanh toán</h3>
+                    <hr>
+                    <ul class="list_pay">
+                        <li>
+                            <img src="/Images/logo.png" alt="" >
+                            <p>
+                                <b>Thanh toán bằng tiền mặt tại Văn phòng HelloPay</b> <br>
+                                <span>Sau khi đặt hàng thành công, Quý khách vui lòng qua văn phòng Abay để thanh toán và nhận vé.</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="/Images/HouseIcon.png" alt="" >
+                            <p>
+                                <b>Thanh toán tại nhà</b> <br>
+                                <span>Nhân viên HelloBay sẽ giao vé & thu tiền tại nhà theo địa chỉ Quý khách cung cấp.</span>
+                            </p>
+                        </li>
+                        <li>
+<!--                            <p style="width: 60px;height: 50px">-->
+                            <img src="/Images/zalo-pay-logo.png" alt="">
+<!--                            <img src="/Images/napas-logo.png" alt=""></p>-->
+<!--                            <p>-->
+                            <p>
+                                <b>Thanh toán qua cổng thanh toán điện tử</b> <br>
+                                <span>Quý khách có thể thanh toán ngay (trực tuyến) qua cổng ZaloPay và Napas.</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="/Images/Payoo.png" alt="">
+                            <p>
+                                <b>Thanh toán qua các cửa hàng tiện ích</b> <br>
+                                <span>Quý khách có thể qua các điểm giao dịch, cửa hàng tiện ích ngay gần nhà để thanh toán.</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="/Images/bank.jpg" alt="">
+                            <p>
+                                <b>Thanh toán qua chuyển khoản</b> <br>
+                                <span>Quý khách có thể thanh toán bằng cách chuyển khoản trực tiếp tại ngân hàng, qua thẻ ATM, hoặc qua Internet banking.</span>
+                            </p>
+                        </li>
+                        <li class="bank">
+                            <img src="/Images/PartnerV2.jpg" alt="">
+
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+        <div class="list_ticket">
+            <h3>Vé máy bay giá rẻ</h3>
+            <div class="list_img">
+                <a class="btn-move prev" onclick="MoveRight(true);">abc</a>
+                <ul id="ulBestPrice">
+                    <li>
+                        <a href="#">
+                            <img src="/Images/ve-gia-re-di-CXR.png" alt="">
+                            <div>
+                                <h3>Hà Nội - Nha Trang</h3>
+                                <p>1/1/2022</p>
+                                <p class="bestprice">
+                                    99,000
+                                    <sup>Đ</sup>
+                                </p>
+                            </div>
+                        </a>
+                    </li>                    <li>
+                    <a href="#">
+                        <img src="/Images/ve-gia-re-di-CXR.png" alt="">
+                        <div>
+                            <h3>Hà Nội - Nha Trang</h3>
+                            <p>1/1/2022</p>
+                            <p class="bestprice">
+                                99,000
+                                <sup>Đ</sup>
+                            </p>
+                        </div>
+                    </a>
+                </li>                    <li>
+                    <a href="#">
+                        <img src="/Images/ve-gia-re-di-CXR.png" alt="">
+                        <div>
+                            <h3>Hà Nội - Nha Trang</h3>
+                            <p>1/1/2022</p>
+                            <p class="bestprice">
+                                99,000
+                                <sup>Đ</sup>
+                            </p>
+                        </div>
+                    </a>
+                </li>                    <li>
+                    <a href="#">
+                        <img src="/Images/ve-gia-re-di-CXR.png" alt="">
+                        <div>
+                            <h3>Hà Nội - Nha Trang</h3>
+                            <p>1/1/2022</p>
+                            <p class="bestprice">
+                                99,000
+                                <sup>Đ</sup>
+                            </p>
+                        </div>
+                    </a>
+                </li>                    <li>
+                    <a href="#">
+                        <img src="/Images/ve-gia-re-di-CXR.png" alt="">
+                        <div>
+                            <h3>Hà Nội - Nha Trang</h3>
+                            <p>1/1/2022</p>
+                            <p class="bestprice">
+                                99,000
+                                <sup>Đ</sup>
+                            </p>
+                        </div>
+                    </a>
+                </li>                    <li>
+                    <a href="#">
+                        <img src="/Images/ve-gia-re-di-CXR.png" alt="">
+                        <div>
+                            <h3>Hà Nội - Nha Trang</h3>
+                            <p>1/1/2022</p>
+                            <p class="bestprice">
+                                99,000
+                                <sup>Đ</sup>
+                            </p>
+                        </div>
+                    </a>
+                </li>                    <li>
+                    <a href="#">
+                        <img src="/Images/ve-gia-re-di-CXR.png" alt="">
+                        <div>
+                            <h3>Hà Nội - Nha Trang</h3>
+                            <p>1/1/2022</p>
+                            <p class="bestprice">
+                                99,000
+                                <sup>Đ</sup>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+
+                </ul>
+                <a class="btn-move next" onclick="MoveLeft(true);">abc</a>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+</body>
+</html>
